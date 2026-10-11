@@ -1,16 +1,18 @@
 # Hi, I'm Abdul Rehman
 
-### Full Stack Engineer | TypeScript · Node.js · NestJS · React · Next.js
+### AI Engineer | Full Stack (TypeScript · Python) | Voice Agents · RAG · LLM Apps
 
-I build production-grade web systems where **backend architecture, real-time workflows, AI integrations, and data integrity actually matter**. My experience spans fintech and banking platforms, AI-powered SaaS products, multi-tenant CRMs, e-commerce systems, and real-time manufacturing dashboards. I work across the full lifecycle of a product — from **database design and API architecture to authentication, asynchronous processing, third-party integrations, Dockerized infrastructure, and production deployment**.
+I build production-grade AI applications and web systems where **backend architecture, real-time voice and AI workflows, and data integrity actually matter**. My experience spans AI voice agents, AI-powered SaaS products, fintech and banking platforms, multi-tenant CRMs, and e-commerce systems. I work across the full lifecycle of a product, from **database design and API architecture to authentication, asynchronous processing, LLM integrations, Dockerized infrastructure, and production deployment**.
 
-I currently work primarily with **TypeScript, NestJS, Node.js, React, Next.js, PostgreSQL, Redis, and modern cloud infrastructure**, with a particular interest in building secure, scalable backend systems and AI-enabled products.
+I currently work with **TypeScript, Python, NestJS, FastAPI, React, Next.js, PostgreSQL, Redis, and modern cloud infrastructure**, with a particular interest in building secure, scalable backends and AI-enabled products.
 
 ---
 
 ## What I Build
 
-* Scalable REST APIs and backend services with **Node.js / NestJS**
+* **AI voice agents** with real-time STT, LLM, and TTS pipelines (LiveKit, Twilio SIP, Deepgram, Cartesia, OpenAI)
+* **RAG applications and LLM tool-calling workflows** with FastAPI, Gemini, and ChromaDB
+* Scalable REST APIs and backend services with **Node.js / NestJS** and **Python / FastAPI**
 * Multi-tenant SaaS systems with strict **organization-level data isolation**
 * Fintech and payment workflows with **RBAC, authentication, KYC, and transaction processing**
 * AI-powered applications using **OpenAI, Gemini, LLM orchestration, and file-ingestion pipelines**
@@ -22,6 +24,17 @@ I currently work primarily with **TypeScript, NestJS, Node.js, React, Next.js, P
 
 ## Production Experience
 
+### AI Voice Agents for a Dealership Platform
+
+**NestJS · LiveKit · Twilio SIP · Deepgram · Cartesia · OpenAI · PostgreSQL · PM2**
+
+* Built real-time voice agents with an STT → LLM → TTS pipeline (Deepgram, GPT-4o-mini, Cartesia) and Silero voice activity detection, running inside the NestJS application lifecycle.
+* Bridged Twilio SIP trunks to LiveKit rooms for inbound and outbound AI phone conversations.
+* Implemented LLM tool calling for vehicle inventory search and test-drive scheduling, synced with Google Calendar and PostgreSQL.
+* Built a node-based IVR flow engine with DTMF input, branching, call transfers, and voicemail using Twilio TwiML.
+* Moved heavy text-to-speech synthesis into background workers, fixing gateway timeouts on save requests.
+* Secured internal worker callbacks with a custom NestJS guard and deployed on Linux with PM2.
+
 ### AI-Powered Dealership CRM
 
 **NestJS · React · PostgreSQL · Twilio · OpenAI**
@@ -32,7 +45,7 @@ I currently work primarily with **TypeScript, NestJS, Node.js, React, Next.js, P
 * Added manual lead intake so offline leads could enter the same AI-powered nurture pipeline.
 * Reduced Google OAuth calendar permissions and implemented privacy requirements to unblock production scheduling.
 
-### Amana Pay — Digital Wallet & Banking Platform
+### Amana Pay: Digital Wallet & Banking Platform
 
 **Angular · Node.js · Express · Redis · BullMQ**
 
@@ -42,7 +55,7 @@ I currently work primarily with **TypeScript, NestJS, Node.js, React, Next.js, P
 * Built KYC, QR/bill payment, and real-time transaction functionality.
 * Used Redis caching and BullMQ for asynchronous processing.
 
-### Scribe — AI Study Platform
+### Scribe: AI Study Platform
 
 **Next.js · tRPC · OpenAI · PostgreSQL · Prisma · Pusher · Stripe**
 
@@ -51,6 +64,16 @@ Built an AI learning platform capable of transforming PDFs and notes into study 
 ---
 
 ## Selected Projects
+
+### FastAPI Gemini RAG Chatbot
+
+**Python · FastAPI · Gemini · ChromaDB · Pydantic**
+
+An AI chatbot backend with streaming responses, per-session conversation memory, model-driven tool calling, and retrieval-augmented generation over a policy document. Structured with a service layer and dependency injection.
+
+* Streams replies token by token
+* Lets the model decide when to call tools or search the document via RAG
+* Answers "I don't know" instead of guessing when the document has no answer
 
 ### Multi-Tenant CRM
 
@@ -82,7 +105,7 @@ Implemented Stripe checkout, Cloudinary media management, role-based authenticat
 
 ### Languages
 
-`TypeScript` `JavaScript` `SQL`
+`TypeScript` `JavaScript` `Python` `SQL`
 
 ### Frontend
 
@@ -90,15 +113,15 @@ Implemented Stripe checkout, Cloudinary media management, role-based authenticat
 
 ### Backend
 
-`Node.js` `NestJS` `Express` `Fastify` `REST APIs` `JWT` `RBAC` `tRPC`
+`Node.js` `NestJS` `Express` `Fastify` `FastAPI` `REST APIs` `JWT` `RBAC` `tRPC`
 
 ### Databases & Data
 
-`PostgreSQL` `MongoDB` `Microsoft SQL Server` `Prisma` `Mongoose` `Redis` `BullMQ`
+`PostgreSQL` `MongoDB` `Microsoft SQL Server` `Prisma` `Mongoose` `Redis` `BullMQ` `ChromaDB`
 
 ### AI & Real-Time
 
-`OpenAI` `Google Gemini` `LLM Orchestration` `Socket.IO` `Pusher` `File Ingestion Pipelines`
+`OpenAI` `Google Gemini` `RAG` `Embeddings` `LLM Tool Calling` `Streaming Responses` `LiveKit` `Twilio SIP` `Deepgram` `Cartesia` `Socket.IO` `Pusher`
 
 ### Cloud & DevOps
 
@@ -114,11 +137,11 @@ Implemented Stripe checkout, Cloudinary media management, role-based authenticat
 
 I am particularly interested in:
 
+* AI engineering: voice agents, RAG, and LLM tool calling
 * Backend architecture and scalable APIs
 * Distributed and asynchronous processing
 * Multi-tenant SaaS architecture
 * Fintech and payment systems
-* AI-powered product development
 * Database design and data integrity
 * Real-time communication systems
 * Cloud infrastructure and production deployment
@@ -126,6 +149,10 @@ I am particularly interested in:
 ---
 
 ## Featured Repositories
+
+### FastAPI Gemini RAG Chatbot
+
+FastAPI backend with Gemini streaming, tool calling, and RAG using ChromaDB.
 
 ### Black Pearl Backend
 
@@ -156,6 +183,6 @@ A full-stack application demonstrating authentication, CRUD workflows, real-time
 
 ## Current Direction
 
-Focused on building deeper expertise in **backend architecture, NestJS, TypeScript, distributed systems, AI integrations, PostgreSQL, Redis, and production cloud infrastructure**.
+Building deeper expertise in **AI engineering (voice agents, RAG, LLM tool calling), backend architecture, NestJS and FastAPI, distributed systems, PostgreSQL, Redis, and production cloud infrastructure**.
 
 I value systems that are not only functional, but also **secure, maintainable, observable, and capable of handling real production constraints**.
