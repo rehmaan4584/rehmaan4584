@@ -1,6 +1,6 @@
 # Hi, I'm Abdul Rehman
 
-### AI Engineer | Full Stack (TypeScript · Python) | Voice Agents · RAG · LLM Apps
+### AI Engineer | Full Stack (TypeScript · Python) | RAG · LLM Apps
 
 I build production-grade AI applications and web systems where **backend architecture, real-time voice and AI workflows, and data integrity actually matter**. My experience spans AI voice agents, AI-powered SaaS products, fintech and banking platforms, multi-tenant CRMs, and e-commerce systems. I work across the full lifecycle of a product, from **database design and API architecture to authentication, asynchronous processing, LLM integrations, Dockerized infrastructure, and production deployment**.
 
